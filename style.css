@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+}
+
+.container .menu li {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container .menu li a {
+    color: #fff;
+    display: block;
+    margin: 10px auto;
+    /* margin: 10px auto; */
+    font-family: 'Nunito Sans';
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.container .menu li a:hover ~ .cursor {
+    transform: scale(6);
+    /* background: #fff; */
+}
+
+.cursor {
+    width: 40px;
+    position: fixed;
+    border-radius: 50px;
+    transition: 0.1s linear;
+    height: 40px;
+    pointer-events: none;
+    border: 1px solid #ffffff;
+    transform: translate(-50%, -50%);
+    /* background: #fff; */
+}
